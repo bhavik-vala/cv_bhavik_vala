@@ -3,56 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Product Manager</title>
+    <title>Bhavik Vala</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <div class="container">
-            <div class="logo">Bhavik Vala</div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
+        <div class="logo">Bhavik Vala</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1>Welcome to My Product Manager Portfolio</h1>
-                <p>Showcasing my expertise in product management, delivering impactful projects, and driving innovation.</p>
-                <div class="cta-buttons">
-                    <a href="#explore" class="btn-primary">Explore My Profile</a>
-                    <a href="resume.pdf" class="btn-secondary" download>Download Resume</a>
+        <div class="hero-text">
+            <h1>Welcome to My Product Manager Portfolio</h1>
+            <p>Showcasing my expertise in product management, delivering impactful projects, and driving innovation.</p>
+            <div class="cta-buttons">
+                <a href="#about" class="btn-primary">Explore</a>
+                <a href="resume.pdf" download class="btn-secondary">Download Resume</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="/assets/bhavik1.jpg" alt="Hero Image">
+        </div>
+    </section>
+
+    <!-- Toggle Section -->
+    <section class="toggle-section" id="toggle">
+        <div class="toggle-buttons">
+            <button class="toggle-btn active" data-target="about-content">About Me</button>
+            <button class="toggle-btn" data-target="education-content">Education</button>
+        </div>
+        <div class="toggle-content">
+            <div id="about-content" class="content active">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I am a product manager with a strong background in digital engineering and a passion for technology. I specialize in driving innovative solutions to deliver exceptional results.</p>
+                    <p>My experience spans across various projects, focusing on blockchain technologies, product lifecycle management, and team collaboration.</p>
+                </div>
+                <div class="about-image">
+                    <img src="/assets/bhavik1.jpg" alt="About Me Image">
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="assets/bhavik1.jpg" alt="Hero Placeholder">
-
+            <div id="education-content" class="content">
+                <h2>My Education</h2>
+                <ul class="education-list">
+                    <li><strong>Oct 2016 – Aug 2019:</strong> Master of Science – Digital Engineering<br>Otto von Guericke Universität, Magdeburg (Germany)<br>Major: Blockchain & Swarm Intelligence</li>
+                    <li><strong>Aug 2011 – July 2014:</strong> Bachelor of Engineering – Electronics and Communication<br>Gujarat Technological University, Ahmedabad (India)<br>Major: Telecommunications</li>
+                    <li><strong>July 2007 – June 2011:</strong> Diploma of Engineering – Electronics and Communication<br>Nirma University, Ahmedabad (India)</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>As a passionate product manager, I specialize in delivering innovative solutions and driving strategic goals. My expertise lies in aligning team efforts, analyzing market trends, and ensuring seamless product lifecycle management. Let's explore how I can contribute to your projects!</p>
-            </div>
-            <div class="about-image">
-                <img src="assets/bhavik.jpg" alt="About Me Placeholder">
-            </div>
-        </div>
-    </section>
+    <script src="script.js"></script>
 </body>
 </html>
